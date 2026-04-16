@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>College Admission System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>College Admission Form</h1>
+
+  <form id="admissionForm">
+    <input type="text" id="name" placeholder="Full Name" required>
+    <input type="email" id="email" placeholder="Email" required>
+    <input type="text" id="phone" placeholder="Phone Number" required>
+
+    <select id="course" required>
+      <option value="">Select Course</option>
+      <option>CSE</option>
+      <option>ECE</option>
+      <option>Mechanical</option>
+      <option>Civil</option>
+      <option>AIDS</option>
+      <option>CYBER SECURITY</option>
+    </select>
+
+    <button type="submit">Apply Now</button>
+  </form>
+
+  <h2>Applications</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Course</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody id="applicationList"></tbody>
+  </table>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
